@@ -1,8 +1,8 @@
-function addTask() {
-  let list = document.getElementById('taskList');
-  let task = document.getElementById('task').value;
+function addTodo() {
+  let list = document.getElementById('todoList');
+  let todo = document.getElementById('todo').value;
   let entry = document.createElement('li');
-  entry.appendChild(document.createTextNode(task));
+  entry.appendChild(document.createTextNode(todo));
   list.appendChild(entry);
 
   let removeButton = document.createElement('input');
@@ -14,10 +14,10 @@ function addTask() {
   }, false);
   entry.appendChild(removeButton);
 
-  document.getElementById('task').value = '';
+  document.getElementById('todo').value = '';
 }
 
-function clearTasks() {
-  document.getElementById('taskList').innerHTML = '';
-  document.getElementById('task').value = '';
+function clearTodos() {
+  document.getElementById('todoList').innerHTML = '';
+  document.getElementById('todo').value = '';
 }

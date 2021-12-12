@@ -7,17 +7,17 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <script src="script.js"></script>
-  <title>Task Application</title>
+  <title>Todo List</title>
 </head>
 
 <body>
   <div class="form-group container col-sm-4" id="inputFields">
-    <input autocomplete="off" type="text" class="form-control" id="task" placeholder="Enter task">
-    <small id="taskHelp" class="form-text text-muted">Try and be as descriptive as possible!</small>
-    <input type="button" class="btn btn-primary" onclick="addTask();" value="Add">
-    <input type="button" class="btn btn-danger" onclick="clearTasks();" value="Clear">
+    <input autocomplete="off" type="text" class="form-control" id="todo" placeholder="Enter todo">
+    <small id="todoHelp" class="form-text text-muted">Try and be as descriptive as possible!</small>
+    <input type="button" class="btn btn-primary" onclick="addTodo();" value="Add">
+    <input type="button" class="btn btn-danger" onclick="clearTodos();" value="Clear">
   </div>
-  <ol id="taskList"></ol>
+  <ol id="todoList"></ol>
 </body>
 
 </html>
